@@ -17,7 +17,7 @@ response
                   <p class="card-text">Site: ${val1[item].site}</p>
                   <p>Starts at: ${val1[item].start_time}</p>
                   <p>Ends at: ${val1[item].end_time}</p>
-                  <a href="${val1[item].url}" class="btn">Visit</a>
+                  <a href="${val1[item].url}" class="btn" target="_blank">Visit</a>
                 </div>
             </div>
         `

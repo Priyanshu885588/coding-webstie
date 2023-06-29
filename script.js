@@ -29,6 +29,13 @@ fetch(url)
       `);
 
       displayCards(cards);
+
+      if(Object.keys(filteredCards).length===0){
+        document.getElementById("search-not-found").style.display="flex";
+      }
+      else{
+        document.getElementById("search-not-found").style.display="none";
+      }
     }
 
     // Retrieve the search input element

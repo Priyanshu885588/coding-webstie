@@ -261,6 +261,9 @@ body {
     animation: appear 0.3s ease-in;
   }
 
+  .search-not-found {
+    width: 100%;
+  }
   @keyframes appear {
     0%{
       width: 0%;

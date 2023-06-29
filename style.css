@@ -252,6 +252,13 @@ body {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 1225px) {
+  .search-not-found {
+    width: 280px;
+  }
+
+}
+
 @media screen and (max-width: 726px) {
   .container1 {
     width: 100%;
@@ -262,7 +269,7 @@ body {
   }
 
   .search-not-found {
-    width: 100%;
+    width: 80%;
   }
   @keyframes appear {
     0%{

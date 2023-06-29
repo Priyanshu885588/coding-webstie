@@ -247,15 +247,3 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
-  .search-bar {
-    height: 90%;
-    font-size: 1rem;
-  }
-  
-  .search-button {
-    cursor: pointer;
-    height: 90%;
-    font-size: 1.2rem;
-  }
-}

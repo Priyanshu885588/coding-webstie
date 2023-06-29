@@ -1,28 +1,54 @@
 let url = "https://kontests.net/api/v1/all";
-let response = fetch(url);
-response
-  .then((val) => {
-    return val.json();
-  })
-  .then((val1) => {
-    console.log(val1);
-    inhtml = "";
-    for (item in val1) {
-      console.log(val1.item);
-      inhtml += `
-        <div class="card" >
-                <img class="card-img-top" src="assests/1.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">${val1[item].name}</h5>
-                  <p class="card-text">Site: ${val1[item].site}</p>
-                  <p>Starts at: ${val1[item].start_time}</p>
-                  <p>Ends at: ${val1[item].end_time}</p>
-                  <a href="${val1[item].url}" class="btn" target="_blank">Visit</a>
-                </div>
-            </div>
-        `
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    const cardContainer = document.getElementById("card-container");
+
+    function displayCards(cards) {
+      cardContainer.innerHTML = cards.join('');
     }
-    document.getElementById("card-container").innerHTML=inhtml;
+
+    function filterCards(searchText) {
+      const filteredCards = data.filter(item => {
+        const cardTitle = item.name.toLowerCase();
+        const cardText = item.site.toLowerCase();
+        return cardTitle.includes(searchText) || cardText.includes(searchText);
+      });
+
+      const cards = filteredCards.map(item => `
+        <div class="card" id="card">
+          <img class="card-img-top" src="assests/1.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">${item.name}</h5>
+            <p class="card-text">${item.site}</p>
+            <p>Starts at: ${item.start_time}</p>
+            <p>Ends at: ${item.end_time}</p>
+            <a href="${item.url}" class="btn" target="_blank">Visit</a>
+          </div>
+        </div>
+      `);
+
+      displayCards(cards);
+    }
+
+    // Retrieve the search input element
+    const searchInput = document.getElementById('searchInput');
+    const searchForm = document.getElementById('searchForm');
+
+    // Attach an event listener to capture the form submission
+    searchForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      const searchText = searchInput.value.toLowerCase();
+      filterCards(searchText);
+    });
+
+    searchInput.addEventListener('input', function() {
+      const searchText = searchInput.value.toLowerCase();
+      filterCards(searchText);
+    });
+
+    // Display all cards initially
+    filterCards("");
   });
 
   let nav = document.getElementById('container1');
@@ -39,3 +65,4 @@ response
     isNavVisible = !isNavVisible;
   });
   
+

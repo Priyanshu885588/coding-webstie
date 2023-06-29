@@ -84,7 +84,7 @@ body {
   display: none;
   position: absolute;
   left: 4%;
-  top: 2%;
+  top: 1%;
   width: 30px;
 }
 
@@ -114,6 +114,7 @@ body {
   border: 1px solid white;
   background-color: #282829;
   font-size: 1.2rem;
+  color: aliceblue;
 }
 
 .search-button {
@@ -243,5 +244,18 @@ body {
   }
   .card {
     width: 15rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .search-bar {
+    height: 90%;
+    font-size: 1rem;
+  }
+  
+  .search-button {
+    cursor: pointer;
+    height: 90%;
+    font-size: 1.2rem;
   }
 }

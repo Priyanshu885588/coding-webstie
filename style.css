@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 
 * {
   margin: 0;
@@ -8,16 +8,14 @@
 }
 
 body {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    gap: 10px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
 }
 
 .container1 {
-    position: sticky;
-    top: 0;
   z-index: 4;
   background-color: rgba(38, 38, 38, 0.903);
   width: 20%;
@@ -40,9 +38,9 @@ body {
 }
 
 .logo {
-    width: 60%;
-    padding-bottom: 20px;
-    border-bottom: 2px solid white;
+  width: 60%;
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
 }
 
 .list-items {
@@ -53,7 +51,7 @@ body {
 }
 
 .list-items:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .list-items a {
@@ -64,7 +62,7 @@ body {
 }
 
 .list-items a:hover {
-    color: rgb(255, 197, 125);
+  color: rgb(255, 197, 125);
 }
 
 .Profile {
@@ -82,132 +80,168 @@ body {
   color: white;
   text-decoration: none;
 }
-
-.container2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis:100%;
-    margin-top: 2%;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    width: 100%;
-    height: 8%;
+#menu {
+  display: none;
+  position: absolute;
+  left: 4%;
+  top: 2%;
+  width: 30px;
 }
 
-.container2 form{
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  margin-top: 2%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+  height: 8%;
+}
+
+.container2 form {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .search-bar {
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    border: none;
-    border: 1px solid white;
-    background-color: #282829;
-    font-size: 1.2rem;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  border: 1px solid white;
+  background-color: #282829;
+  font-size: 1.2rem;
 }
 
 .search-button {
-    cursor: pointer;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.861);
-    color: rgba(0, 0, 0, 0.543);
-    border: 1px solid white;
-    padding: 0px 10px;
-    font-size: 1.7rem;
+  cursor: pointer;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.861);
+  color: rgba(0, 0, 0, 0.543);
+  border: 1px solid white;
+  padding: 0px 10px;
+  font-size: 1.7rem;
 }
 
 .container3 {
-    position: relative;
-    height: 84vh;
-    margin-top: 20px;
-    flex-basis: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    overflow-y: scroll;
+  position: relative;
+  height: 84vh;
+  margin-top: 20px;
+  flex-basis: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  overflow-y: scroll;
 }
 
 .card {
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.78);
-    height: 20rem;
-    width: 17rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    font-family: 'Fira Code', monospace;
-    border: 1px solid white;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.78);
+  height: 20rem;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Fira Code", monospace;
+  border: 1px solid white;
 }
 
 .card-img-top {
-    width: 100%;
-    border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
 
-.card-body{
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.7rem;
-    gap: 7px;
+.card-body {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  gap: 7px;
 }
 
-.card-title{
-    margin-top: 10px;
-    font-size: 0.9rem;
-    text-align: center;
+.card-title {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .card-text {
-    text-align: center;
-    font-size: 0.78rem;
-    margin: 0px 10px;
+  text-align: center;
+  font-size: 0.78rem;
+  margin: 0px 10px;
 }
 
-.btn{
-    cursor: pointer;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 5px 20px;
+.btn {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 20px;
 
-
-    border: 2px solid rgb(0, 0, 0);
-    transition: 0.2s ease-out;
-    background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  transition: 0.2s ease-out;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .btn:hover {
-    background-color: rgb(65, 143, 185);
+  background-color: rgb(65, 143, 185);
 }
 
 /* Works on Firefox */
 * {
-    scrollbar-width: 10px;
-    scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
+  scrollbar-width: 10px;
+  scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  height: 3px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.957);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 726px) {
+  .container1 {
+    width: 100%;
+    background-color: black;
+    display: none;
+    position: absolute;
+    animation: appear 0.3s ease-in;
   }
-  
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    height: 3px;
-    width: 10px;
+
+  @keyframes appear {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
   }
-  
-  *::-webkit-scrollbar-track {
-    background: rgb(0, 0, 0);
+
+  #menu {
+    display: block;
+    z-index: 5;
   }
-  
-  *::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.957);
-    border-radius: 10px;
+
+  .search-bar {
+    font-size: 1rem;
   }
+  .card {
+    width: 15rem;
+  }
+}

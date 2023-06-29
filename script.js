@@ -25,3 +25,17 @@ response
     document.getElementById("card-container").innerHTML=inhtml;
   });
 
+  let nav = document.getElementById('container1');
+  let menu = document.getElementById('menu');
+  let isNavVisible = false;
+  
+  menu.addEventListener('click', () => {
+    if (isNavVisible) {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'flex';
+    }
+    
+    isNavVisible = !isNavVisible;
+  });
+  

@@ -177,7 +177,7 @@ body {
 
 .container3 {
   position: relative;
-  height: 100vh;
+  height: 84vh;
   margin-top: 20px;
   flex-basis: 100%;
   background-color: rgba(255, 255, 255, 0);
@@ -335,7 +335,7 @@ body {
 
 
   .card {
-    height: 40%;
+    height: 27%;
     width: 40%;
     font-size: 0.7rem;
   }
@@ -346,11 +346,12 @@ body {
 
   .card-body {
     font-size: 0.5rem;
-    gap: 7px;
+    gap: 10px;
+    justify-content: center;
   }
   
   .card-title {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
   }
   
   .card-text {

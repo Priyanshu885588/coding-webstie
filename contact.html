@@ -83,11 +83,11 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <input type="submit" value="Submit">
+            <input id="sub" type="submit" value="Submit">
         </form>
     </div>
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
+        document.getElementById("sub").addEventListener("click", function(event) {
           event.preventDefault(); // Prevent form submission
           
           // Perform any necessary form validation or data processing here

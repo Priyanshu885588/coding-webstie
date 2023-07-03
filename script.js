@@ -21,8 +21,8 @@ fetch(url)
           <div class="card-body">
             <h5 class="card-title">${item.name}</h5>
             <p class="card-text">${item.site}</p>
-            <p>Starts at: ${item.start_time}</p>
-            <p>Ends at: ${item.end_time}</p>
+            <p class="time">  Starts at: ${item.start_time}</p>
+            <p class="time">  Ends at: ${item.end_time}</p>
             <a href="${item.url}" class="btn" target="_blank">Visit</a>
           </div>
         </div>

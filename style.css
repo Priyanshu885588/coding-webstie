@@ -114,27 +114,34 @@ body {
 .search-not-found h1 {
   color: #fff;
   font-family: monospace;
-  overflow: hidden; 
-  border-right: .15em solid orange; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   font-size: 2rem;
-  animation: 
-    typing 2s steps(11, end),
-    blink-caret .5s step-end infinite;
+  animation: typing 2s steps(11, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 50% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .container2 form {
@@ -146,12 +153,16 @@ body {
 .search-bar {
   width: 50%;
   height: 100%;
-  text-align: center;
-  border: none;
   border: 1px solid white;
   background-color: #282829;
   font-size: 1.2rem;
   color: aliceblue;
+  text-align: center;
+}
+
+.search-bar::-webkit-search-cancel-button {
+  appearance: none;
+  display: none;
 }
 
 .search-button {
@@ -166,7 +177,7 @@ body {
 
 .container3 {
   position: relative;
-  height: 84vh;
+  height: 100vh;
   margin-top: 20px;
   flex-basis: 100%;
   background-color: rgba(255, 255, 255, 0);
@@ -178,7 +189,6 @@ body {
 }
 
 .card {
-  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.78);
   height: 20rem;
   width: 17rem;
@@ -257,7 +267,6 @@ body {
   .search-not-found {
     width: 80%;
   }
-
 }
 
 @media screen and (max-width: 726px) {
@@ -278,10 +287,10 @@ body {
     font-size: 1.3rem;
   }
   @keyframes appear {
-    0%{
+    0% {
       width: 0%;
     }
-    100%{
+    100% {
       width: 100%;
     }
   }
@@ -299,3 +308,56 @@ body {
   }
 }
 
+@media screen and (max-width: 726px) {
+  #menu {
+  }
+
+  .container2 {
+    margin: 0;
+  }
+
+  .search-bar {
+    padding-left: 40px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+  }
+
+  .search-button {
+    background-color: #282829;
+    border: none;
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+    font-size: 1.4rem;
+  }
+
+
+  .card {
+    height: 40%;
+    width: 40%;
+    font-size: 0.7rem;
+  }
+
+  .card-img-top {
+    display: block;
+  }
+
+  .card-body {
+    font-size: 0.5rem;
+    gap: 7px;
+  }
+  
+  .card-title {
+    font-size: 0.65rem;
+  }
+  
+  .card-text {
+    font-size: 0.5rem;
+  }
+
+  .time {
+    display: none;
+  }
+}

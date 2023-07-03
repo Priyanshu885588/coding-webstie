@@ -335,18 +335,12 @@ body {
 
 
   .card {
-    height: 35%;
+    height: 33%;
     width: 40%;
     font-size: 0.7rem;
   }
 
-  .card-img-top {
-    flex-basis: 40%;
-    height: 50%;
-  }
-
   .card-body {
-    flex-basis: 60%;
     font-size: 0.5rem;
     gap: 5px;
     justify-content: center;

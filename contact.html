@@ -7,6 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <style>
+        .button {
+            color: white;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            color: red;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #000000;
@@ -16,13 +27,13 @@
 
         h1 {
             text-align: center;
-            color: rgb(210, 210, 210);
+            color: rgb(255, 255, 255);
         }
 
         .container {
             max-width: 500px;
             margin: 0 auto;
-            background-color: rgb(244, 223, 223);
+            background-color: rgba(188, 188, 188, 0.173);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -36,6 +47,7 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
+            color: white;
         }
 
         input[type="text"],
@@ -64,6 +76,7 @@
 </head>
 
 <body>
+    <a class="button" href="index.html">≪</a>
     <h1>Contact Form</h1>
     <div class="container">
         <form action="https://formspree.io/f/mvojpyno" method="post">
